@@ -116,9 +116,14 @@
             key-positions = <32 13>;
         };
 
-        combo-sticky-shift {
+        combo-sticky-shift1 {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <19 18>;
+            key-positions = <18 27>;
+        };
+
+        combo-sticky-shift2 {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <11 22>;
         };
     };
 
