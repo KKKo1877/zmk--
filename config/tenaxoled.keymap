@@ -43,11 +43,11 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_dash {
+        combo_shift {
             timeout-ms = <200>;
             key-positions = <5 15>;
             layers = <0 2>;
-            bindings = <&kp MINUS>;
+            bindings = <&kp LEFT_SHIFT>;
         };
 
         bt_clr {
