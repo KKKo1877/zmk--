@@ -120,6 +120,21 @@
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <11 22>;
         };
+
+        combo-winlock {
+            bindings = <&kp LG(L)>;
+            key-positions = <6 7 8>;
+        };
+
+        combo-btclear {
+            bindings = <&bt BT_CLR>;
+            key-positions = <0 24>;
+        };
+
+        combo-winswap {
+            bindings = <&kp LA(LG(TAB))>;
+            key-positions = <1 2 3>;
+        };
     };
 
     behaviors {
