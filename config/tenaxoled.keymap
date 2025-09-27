@@ -135,6 +135,11 @@
             bindings = <&kp LA(LG(TAB))>;
             key-positions = <1 2 3>;
         };
+
+        combo-control {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <4 14>;
+        };
     };
 
     behaviors {
