@@ -63,8 +63,8 @@
             layers = <0>;
         };
 
-        combo_dqt {
-            bindings = <&kp SINGLE_QUOTE>;
+        combo_comma {
+            bindings = <&kp COMMA>;
             key-positions = <5 6>;
             layers = <0>;
             timeout-ms = <200>;
@@ -139,6 +139,13 @@
         combo-control {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <4 14>;
+        };
+
+        comma_period {
+            bindings = <&kp PERIOD>;
+            key-positions = <3 4>;
+            timeout-ms = <200>;
+            layers = <0>;
         };
     };
 
