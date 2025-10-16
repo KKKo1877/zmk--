@@ -63,13 +63,6 @@
             layers = <0>;
         };
 
-        combo_comma {
-            bindings = <&kp COMMA>;
-            key-positions = <5 6>;
-            layers = <0>;
-            timeout-ms = <200>;
-        };
-
         cmb_bspLine {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <10 11>;
@@ -141,9 +134,30 @@
             key-positions = <4 14>;
         };
 
-        comma_period {
+        combo_Rcomma {
+            bindings = <&kp COMMA>;
+            key-positions = <7 26>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
+
+        combo_Lcomma {
+            bindings = <&kp COMMA>;
+            key-positions = <2 23>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
+
+        combo_Rperiod {
             bindings = <&kp PERIOD>;
-            key-positions = <3 4>;
+            key-positions = <7 16>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
+
+        combo_Lperiod {
+            bindings = <&kp PERIOD>;
+            key-positions = <2 13>;
             timeout-ms = <200>;
             layers = <0>;
         };
