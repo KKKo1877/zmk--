@@ -560,10 +560,10 @@
         Number-Layer {
             display-name = "5OS";
             bindings = <
-&kp EXCL  &kp AT  &kp HASH      &kp DOLLAR  &kp PLUS   &kp MINUS      &kp PERCENT  &kp CARET     &kp AMPERSAND  &kp ASTRK
-&kp N1    &kp N2  &kp N3        &kp N4      &trans     &trans         &kp N5       &kp N6        &kp N7         &kp N8
-&none     &none   &kp NUMBER_9  &none       &none      &none          &none        &kp NUMBER_0  &kp DOT        &none
-                  &none         &none       &kp SPACE  &kp BACKSPACE  &none        &none
+&kp EXCL   &kp AT     &kp HASH   &kp DOLLAR    &kp PLUS   &kp MINUS      &kp PERCENT         &kp CARET      &kp AMPERSAND  &kp ASTRK
+&kp N1     &kp N2     &kp N3     &kp N4        &trans     &trans         &kp N5              &kp N6         &kp N7         &kp N8
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)     &kp LC(Y)  &kp HOME       &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &kp LS(LG(T))  &kp END
+                      &none      &kp NUMBER_9  &kp SPACE  &kp BACKSPACE  &kp NUMBER_0        &none
             >;
 
             sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
