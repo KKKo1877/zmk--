@@ -495,10 +495,10 @@
         Default {
             display-name = "0DFL";
             bindings = <
-&kp Z                  &kp L           &kp D           &kp C             &kp V       &kp SINGLE_QUOTE  &kp F                          &kp O            &kp U            &kp J
-&hm LCTRL N            &hm LEFT_ALT R  &hm LEFT_GUI T  &hm LEFT_SHIFT S  &ht_hl 5 G  &ht_hl 5 Y        &hm RIGHT_SHIFT H              &hm RIGHT_GUI A  &hm RIGHT_ALT E  &hm RCTRL I
-&left_taphold LC(X) X  &kp Q           &kp M           &kp W             &kp B       &kp K             &kp P                          &kp SEMI         &kp MINUS        &kp FSLH
-                                       &key_repeat     &mo 6             &kp SPACE   &kp BACKSPACE     &rght_taphold LS(ENTER) ENTER  &to 1
+&kp Z                  &kp L  &kp D  &kp C  &kp V      &kp SINGLE_QUOTE  &kp F                          &kp O                       &kp U               &kp J
+&kp N                  &kp R  &kp T  &kp S  &kp G      &kp Y             &kp H                          &kp A                       &kp E               &kp I
+&left_taphold LC(X) X  &kp Q  &kp M  &kp W  &kp B      &kp K             &kp P                          &hm LEFT_CONTROL SEMICOLON  &hm LEFT_ALT MINUS  &hm LEFT_GUI SLASH
+                              &mo 5  &mo 6  &kp SPACE  &kp BACKSPACE     &rght_taphold LS(ENTER) ENTER  &to 1
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -560,10 +560,10 @@
         Number-Layer {
             display-name = "5OS";
             bindings = <
-&kp EXCL   &kp AT     &kp HASH   &kp DOLLAR    &kp PLUS   &kp MINUS      &kp PERCENT         &kp CARET      &kp AMPERSAND  &kp ASTRK
-&kp N1     &kp N2     &kp N3     &kp N4        &trans     &trans         &kp N5              &kp N6         &kp N7         &kp N8
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)     &kp LC(Y)  &kp HOME       &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &kp LS(LG(T))  &kp END
-                      &none      &kp NUMBER_9  &kp SPACE  &kp BACKSPACE  &kp NUMBER_0        &none
+&kp EXCL   &kp AT     &kp HASH   &kp DOLLAR    &kp PLUS   &kp MINUS       &kp PERCENT         &kp CARET      &kp AMPERSAND  &kp ASTRK
+&kp N1     &kp N2     &kp N3     &kp N4        &kp AT     &sk LEFT_SHIFT  &kp N5              &kp N6         &kp N7         &kp N8
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)     &kp LC(Y)  &kp HOME        &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &kp LS(LG(T))  &kp END
+                      &none      &kp NUMBER_9  &kp SPACE  &kp BACKSPACE   &kp NUMBER_0        &none
             >;
 
             sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
