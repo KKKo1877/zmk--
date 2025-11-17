@@ -76,7 +76,7 @@
 
         combo-tab {
             bindings = <&kp TAB>;
-            key-positions = <8 9>;
+            key-positions = <8 9 7>;
         };
 
         combo-capslock {
