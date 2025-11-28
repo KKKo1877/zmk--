@@ -56,13 +56,6 @@
             layers = <3>;
         };
 
-        combo_del {
-            bindings = <&kp DELETE>;
-            key-positions = <20 21>;
-            timeout-ms = <200>;
-            layers = <0>;
-        };
-
         cmb_bspLine {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <10 11>;
@@ -172,6 +165,26 @@
         combo-controlR {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <26 27>;
+        };
+
+        combo-guiL {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <21 20>;
+        };
+
+        combo-guiR {
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <28 29>;
+        };
+
+        combo-altL {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <22 20>;
+        };
+
+        combo-altR {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <29 27>;
         };
     };
 
