@@ -1,10 +1,10 @@
 include:
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: tenaxoled_left
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: tenaxoled_right
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: settings_reset
 
-
+    
 # there is no settingsreset (needed) for the XIAO
