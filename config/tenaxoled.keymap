@@ -429,7 +429,7 @@
         };
 
         Symbol-Layer {
-            display-name = "2NAV";
+            display-name = "2 SBL";
             bindings = <
 &kp AMPS   &kp FSLH              &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp COLON         &kp SEMI           &kp PLUS
 &kp HASH   &kp NON_US_BACKSLASH  &kp TILDE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR      &kp RIGHT_SHIFT  &kp RGUI          &kp RALT           &kp RCTRL
