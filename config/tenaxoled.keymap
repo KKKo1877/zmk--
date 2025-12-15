@@ -416,7 +416,7 @@
         };
 
         Gaming-Layer {
-            display-name = "1SYN";
+            display-name = "1 GML";
             bindings = <
 &kp ESCAPE  &kp Q  &kp W  &kp E   &kp R   &none   &none     &kp UP_ARROW  &none      &kp TAB
 &kp LCTRL   &kp A  &kp S  &kp D   &kp F   &none   &kp LEFT  &kp DOWN      &kp RIGHT  &none
