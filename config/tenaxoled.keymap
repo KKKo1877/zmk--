@@ -215,32 +215,6 @@
             bindings = <&kp LALT>, <&kp ESC>;
         };
 
-        macro_slideover: macro_slideover {
-            label = "ZM_macro_slideover";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp CAPS>,
-                <&macro_tap>,
-                <&kp BSLH>,
-                <&macro_release>,
-                <&kp CAPS>;
-        };
-
-        macro_windows: macro_windows {
-            label = "ZM_macro_windows";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp CAPS>,
-                <&macro_tap>,
-                <&kp DOWN>,
-                <&macro_release>,
-                <&kp CAPS>;
-        };
-
         macro_switch: macro_switch {
             label = "ZM_macro_switch";
             compatible = "zmk,behavior-macro";
