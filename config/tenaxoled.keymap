@@ -191,7 +191,7 @@
     };
 
     behaviors {
-         // ============================================
+        // ============================================
         // AUTOSHIFT BEHAVIORS - ADD TO YOUR BEHAVIORS SECTION
 
         as: autoshift {
@@ -420,10 +420,10 @@
         Default {
             display-name = "0DFL";
             bindings = <
-&kp Z  &kp L  &kp D          &kp C      &kp V  &kp SINGLE_QUOTE  &kp F                          &kp O          &kp U      &kp J
-&kp N  &kp R  &kp T          &kp S      &kp G  &kp Y             &kp H                          &kp A          &kp E      &kp I
-&kp X  &kp Q  &kp M          &kp W      &kp B  &kp K             &kp P                          &kp SEMICOLON  &kp MINUS  &kp SLASH
-              &kp BACKSPACE  &kp SPACE  &mo 6  &mo 5             &rght_taphold LS(ENTER) ENTER  &to 1
+&as LS(Z) Z  &as LS(L) L  &as LS(D) D    &as LS(C) C  &as LS(V) V  &as LS(SINGLE_QUOTE) APOS  &as LS(F) F                    &as LS(O) O             &as LS(U) U          &as LS(J) J
+&as LS(N) N  &as LS(R) R  &as LS(T) T    &as LS(S) S  &as LS(G) G  &as LS(Y) Y                &as LS(H) H                    &as LS(A) A             &as LS(E) E          &as LS(I) I
+&as LS(X) X  &as LS(Q) Q  &as LS(M) M    &as LS(W) W  &as LS(B) B  &as LS(K) K                &as LS(P) P                    &as LS(SEMICOLON) SEMI  &as LS(MINUS) MINUS  &as LS(SLASH) SLASH
+                          &kp BACKSPACE  &kp SPACE    &mo 6        &mo 5                      &rght_taphold LS(ENTER) ENTER  &to 1
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
