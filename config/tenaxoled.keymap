@@ -472,7 +472,7 @@
 &kp LC(LS(R))                  &kp LS(LC(T))   &kp F12           &kp LA(LEFT)  &kp LA(RIGHT)  &msc SCRL_DOWN  &mkp MB1        &kp F5             &mkp MB2                          &mkp MB3
 &kp LEFT                       &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT     &kp PAGE_UP    &kp RC(F3)      &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_UP                      &mmv MOVE_RIGHT
 &left_taphold RG(GRAVE) GRAVE  &kp RC(RG(Q))   &kp LS(LG(S))     &swapper      &kp PAGE_DOWN  &msc SCRL_UP    &left_arrow     &right_arr         &ArrowSelect LS(LEFT_ARROW) LEFT  &rght_taphold LA(RIGHT) RIGHT
-                                               &kp LEFT_CONTROL  &trans        &trans         &trans          &trans          &kp RIGHT_CONTROL
+                                               &kp LEFT_BRACKET  &trans        &trans         &trans          &trans          &kp RIGHT_BRACKET
             >;
 
             label = "6 TG";
