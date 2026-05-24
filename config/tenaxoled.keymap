@@ -47,7 +47,7 @@
 
         combo_shiftR {
             timeout-ms = <200>;
-            key-positions = <27 28>;
+            key-positions = <27 17>;
             layers = <0 2>;
             bindings = <&kp LEFT_SHIFT>;
         };
@@ -99,16 +99,6 @@
             key-positions = <4 5>;
         };
 
-        combo-sticky-shift1 {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <18 27>;
-        };
-
-        combo-sticky-shift2 {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <11 22>;
-        };
-
         combo-winlock {
             bindings = <&kp LG(L)>;
             key-positions = <6 7 8>;
@@ -126,67 +116,39 @@
 
         combo-controlL {
             bindings = <&kp LEFT_CONTROL>;
-            key-positions = <22 23>;
-        };
-
-        combo_Rcomma {
-            bindings = <&kp COMMA>;
-            key-positions = <7 26>;
-            timeout-ms = <200>;
-            layers = <0>;
-        };
-
-        combo_Lcomma {
-            bindings = <&kp COMMA>;
-            key-positions = <2 23>;
-            timeout-ms = <200>;
-            layers = <0>;
-        };
-
-        combo_Rperiod {
-            bindings = <&kp PERIOD>;
-            key-positions = <7 16>;
-            timeout-ms = <200>;
-            layers = <0>;
-        };
-
-        combo_Lperiod {
-            bindings = <&kp PERIOD>;
-            key-positions = <2 13>;
-            timeout-ms = <200>;
-            layers = <0>;
+            key-positions = <23 13>;
         };
 
         combo-shiftL {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <21 22>;
+            key-positions = <22 12>;
             timeout-ms = <200>;
             layers = <0 2>;
         };
 
         combo-controlR {
             bindings = <&kp LEFT_CONTROL>;
-            key-positions = <26 27>;
+            key-positions = <26 16>;
         };
 
         combo-guiL {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <21 20>;
+            key-positions = <21 11>;
         };
 
         combo-guiR {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <28 29>;
+            key-positions = <28 18>;
         };
 
         combo-altL {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <22 20>;
+            key-positions = <20 10>;
         };
 
         combo-altR {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <29 27>;
+            key-positions = <29 19>;
         };
     };
 
