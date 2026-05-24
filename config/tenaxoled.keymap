@@ -74,18 +74,13 @@
         };
 
         combo-question {
-            bindings = <&kp QUESTION>;
+            bindings = <&kp AT>;
             key-positions = <23 24>;
         };
 
         combo-exclamation {
             bindings = <&kp EXCL>;
             key-positions = <25 26>;
-        };
-
-        combo-at {
-            bindings = <&kp AT>;
-            key-positions = <16 6>;
         };
 
         combo-chinese {
