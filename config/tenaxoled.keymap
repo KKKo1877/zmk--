@@ -149,6 +149,21 @@
             bindings = <&as LS(X) X>;
             key-positions = <10 11>;
         };
+
+        combo-studiounlock {
+            bindings = <&studio_unlock>;
+            key-positions = <20 21>;
+        };
+
+        combo-k {
+            bindings = <&as LS(K) K>;
+            key-positions = <18 19>;
+        };
+
+        combo-enter {
+            bindings = <&kp ENTER>;
+            key-positions = <28 29>;
+        };
     };
 
     behaviors {
