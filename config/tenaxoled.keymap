@@ -58,12 +58,6 @@
             layers = <3>;
         };
 
-        cmb_bspLine {
-            bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <10 11>;
-            layers = <0>;
-        };
-
         combo-esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
@@ -149,6 +143,11 @@
         combo-altR {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <29 19>;
+        };
+
+        combo-x {
+            bindings = <&as LS(X) X>;
+            key-positions = <10 11>;
         };
     };
 
