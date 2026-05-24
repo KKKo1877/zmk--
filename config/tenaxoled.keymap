@@ -458,7 +458,7 @@
             bindings = <
 &kp EXCL           &kp C_VOL_DN     &kp K_MUTE         &kp C_VOLUME_UP      &kp PLUS   &kp LG(D)  &kp LG(E)       &kp LG(L)           &kp SCROLLLOCK          &kp C_PAUSE
 &as EXCL NUMBER_1  &as AT NUMBER_2  &as HASH NUMBER_3  &as DOLLAR NUMBER_4  &kp C_PP   &kp EQUAL  &as PERCENT N5  &as CARET NUMBER_6  &as AMPERSAND NUMBER_7  &as STAR NUMBER_8
-&kp LC(Z)          &kp LC(X)        &kp LC(C)          &kp LC(V)            &kp LC(Y)  &kp LC(A)  &kp LC(F)       &kp LG(RIGHT)       &kp LS(LG(T))           &kp END
+&kp LC(Z)          &kp LC(X)        &kp LC(C)          &kp LC(V)            &kp LC(Y)  &kp LC(A)  &kp LC(F)       &kp RIGHT_CONTROL   &kp LEFT_ALT            &kp LEFT_GUI
                                     &none              &kp NUMBER_9         &trans     &trans     &kp NUMBER_0    &none
             >;
 
