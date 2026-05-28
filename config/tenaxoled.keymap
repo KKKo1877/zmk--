@@ -391,10 +391,10 @@
         Default {
             display-name = "0DFL";
             bindings = <
-&as LS(Q) Q  &as LS(W) W  &as LS(F) F        &as LS(P) P  &as LS(B) B  &as PLUS EQUAL          &as LS(U) U     &as LS(O) O          &as LS(Y) Y              &as LS(J) J
-&as LS(N) N  &as LS(L) L  &as LS(S) S        &as LS(T) T  &as LS(G) G  &as UNDER MINUS         &as LS(E) E     &as LS(A) A          &as LS(I) I              &as LS(H) H
-&as LS(Z) Z  &as LS(M) M  &as LS(C) C        &as LS(D) D  &as LS(V) V  &as DOUBLE_QUOTES APOS  &as COLON SEMI  &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH
-                          &kp LC(BACKSPACE)  &as LS(R) R  &mo 6        &lt 5 BACKSPACE         &kp SPACE       &to 1
+&as LS(Q) Q  &as LS(W) W  &as LS(F) F        &as LS(P) P  &as LS(B) B          &as PLUS EQUAL          &as LS(U) U     &as LS(O) O          &as LS(Y) Y              &as LS(J) J
+&as LS(N) N  &as LS(L) L  &as LS(S) S        &as LS(T) T  &as LS(G) G          &as UNDER MINUS         &as LS(E) E     &as LS(A) A          &as LS(I) I              &as LS(H) H
+&as LS(Z) Z  &as LS(M) M  &as LS(C) C        &as LS(D) D  &as LS(V) V          &as DOUBLE_QUOTES APOS  &as COLON SEMI  &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH
+                          &kp LC(BACKSPACE)  &as LS(R) R  &lt 6 LC(BACKSPACE)  &lt 5 BACKSPACE         &kp SPACE       &to 1
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
