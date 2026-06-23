@@ -154,9 +154,14 @@
             bindings = <&as LS(K) K>;
             key-positions = <18 19>;
         };
+
+        combo-plus {
+            bindings = <&as EQUAL PLUS>;
+            key-positions = <8 9>;
+        };
     };
 
- // ============================================================
+    // ============================================================
     // MAGIC KEY MACROS
     // Each macro outputs the "alternate" character for a bigram.
     // e.g. after typing N, pressing magic → L  (avoids NL SFB)
@@ -267,7 +272,7 @@
             label = "MAGIC_KEY";
             #binding-cells = <0>;
             bindings = <&none>;
-            
+
             ld {
                 trigger-keys = <L>;
                 bindings = <&kp D>;
