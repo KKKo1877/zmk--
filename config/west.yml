@@ -8,19 +8,34 @@ manifest:
       url-base: https://github.com/urob
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: mentaldesk
+      url-base: https://github.com/mentaldesk
+    - name: zzeneg # <-- required for Raw HID module
+      url-base: https://github.com/zzeneg
+    - name: srwi # <-- required for KeyPeek module
+      url-base: https://github.com/srwi
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-nice-oled
-      remote: mctechnology17
-      revision: main
     - name: zmk-smart-toggle
       remote: caksoylar
       revision: main
     - name: zmk-leader-key
       remote: urob
-      revision: main      
+      revision: main
+    - name: oskey
+      remote: mentaldesk
+      revision: main
+    - name: zmk-raw-hid # <-- Raw HID module
+      remote: zzeneg
+      revision: main
+    - name: zmk-keypeek-layer-notifier # <-- KeyPeek module
+      remote: srwi
+      revision: master
+    - name: zmk-adaptive-key
+      remote: urob
+      revision: main   # must match your ZMK revision
   self:
     path: config
