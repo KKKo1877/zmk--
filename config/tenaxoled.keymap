@@ -156,7 +156,200 @@
         };
     };
 
+ // ============================================================
+    // MAGIC KEY MACROS
+    // Each macro outputs the "alternate" character for a bigram.
+    // e.g. after typing N, pressing magic → L  (avoids NL SFB)
+    // ============================================================
+
+    macros {
+        //personal email (h → uonan2015@gmail.com)
+
+        magic_uo: magic_uo {
+            compatible = "zmk,behavior-macro";
+            label = "MAGIC_UO";
+            #binding-cells = <0>;
+            bindings = <&kp U &kp O &kp N &kp A &kp N &kp NUMBER_2 &kp N0 &kp NUMBER_1 &kp NUMBER_5 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+        };
+
+        // Trigram briefs (space/enter → THE)
+
+        magic_the: magic_the {
+            compatible = "zmk,behavior-macro";
+            label = "MAGIC_THE";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp E>;
+        };
+
+        // I → ON  (covers ION trigram)
+
+        magic_on: magic_on {
+            compatible = "zmk,behavior-macro";
+            label = "MAGIC_ON";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp N>;
+        };
+
+        // T → MENT
+
+        magic_ment: magic_ment {
+            compatible = "zmk,behavior-macro";
+            label = "MAGIC_MENT";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp E &kp N &kp T>;
+        };
+
+        // A → ND  (for AND via repeat-key style; also useful standalone)
+
+        magic_nd: magic_nd {
+            compatible = "zmk,behavior-macro";
+            label = "MAGIC_ND";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp D>;
+        };
+
+        // I → NG  (for ING)
+
+        magic_ng: magic_ng {
+            compatible = "zmk,behavior-macro";
+            label = "MAGIC_NG";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp G>;
+        };
+
+        // N → YU  (for NYU)
+
+        magic_yu: magic_yu {
+            compatible = "zmk,behavior-macro";
+            label = "MAGIC_YU";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp U>;
+        };
+
+        // FOR brief (space/enter alternate — second binding priority)
+
+        magic_for: magic_for {
+            compatible = "zmk,behavior-macro";
+            label = "MAGIC_FOR";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp O &kp R>;
+        };
+    };
+
     behaviors {
+        // ============================================================
+        // MAGIC KEY BEHAVIOR
+        // Placed on the Z key position (bottom-left, left hand).
+        // Outputs a context-sensitive alternate character based on
+        // the last key typed, targeting Valmak's SFBs.
+        //
+        // Valmak left hand columns (index→pinky):
+        //   index:  R / T / G / D / V
+        //   middle: S / L / C / M
+        //   ring:   F / N / W
+        //   pinky:  P / X / Z (magic replaces Z)
+        //
+        // Key SFB targets in Valmak:
+        //   P → L  
+        //   W → N
+        //   S → C  (middle finger SC bigram)
+        //   C/F → L  
+        //   A → O  (vowel alternation)
+        //   E → U  (vowel alternation)
+        //   I → ON (ION trigram)
+        //   T → MENT (suffix brief)
+        //   Y → OU  (YOU trigram)
+        //   SPACE/RET → THE (trigram brief)
+        // ============================================================
+
+        magic: magic_key {
+            compatible = "zmk,behavior-adaptive-key";
+            label = "MAGIC_KEY";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            
+            ld {
+                trigger-keys = <L>;
+                bindings = <&kp D>;
+            };
+
+            pl {
+                trigger-keys = <P>;
+                bindings = <&kp L>;
+            };
+
+            wn {
+                trigger-keys = <W>;
+                bindings = <&kp N>;
+            };
+
+            // ── SFB eliminations ──────────────────────────────────
+            // S → C  (SC same-finger bigram on Valmak middle)
+
+            sc {
+                trigger-keys = <S>;
+                bindings = <&kp C>;
+            };
+
+            // C/F → L  (left-index column → Y, avoids index SFBs)
+
+            cfl {
+                trigger-keys = <C F>;
+                bindings = <&kp L>;
+            };
+
+            // ── Vowel alternations ────────────────────────────────
+            // E → U
+
+            eu {
+                trigger-keys = <E>;
+                bindings = <&kp U>;
+            };
+
+            // ── Trigram / suffix briefs ───────────────────────────
+            // I → ON  (covers ION)
+
+            ion {
+                trigger-keys = <I>;
+                bindings = <&magic_on>;
+            };
+
+            // H → uonan2015@gmail.com
+
+            hpersonalemail {
+                trigger-keys = <H>;
+                bindings = <&magic_uo>;
+            };
+
+            // A → ND
+
+            and {
+                trigger-keys = <A>;
+                bindings = <&magic_nd>;
+            };
+
+            // T → MENT
+
+            tment {
+                trigger-keys = <T>;
+                bindings = <&magic_ment>;
+            };
+
+            // N → YU  (covers NYU)
+
+            nyu {
+                trigger-keys = <N>;
+                bindings = <&magic_yu>;
+            };
+
+            // SPACE or ENTER → THE
+
+            the {
+                trigger-keys = <SPACE RET>;
+                bindings = <&magic_the>;
+            };
+        };
+
         // ============================================
         // AUTOSHIFT BEHAVIORS - ADD TO YOUR BEHAVIORS SECTION
 
@@ -386,7 +579,7 @@
         Default {
             display-name = "0DFL";
             bindings = <
-&as LS(Q) Q  &as LS(W) W  &as LS(F) F                    &as LS(P) P  &as LS(B) B          &as PLUS EQUAL          &as LS(U) U     &as LS(O) O          &as LS(Y) Y              &as LS(J) J
+&as LS(Q) Q  &as LS(W) W  &as LS(F) F                    &as LS(P) P  &as LS(B) B          &magic                  &as LS(U) U     &as LS(O) O          &as LS(Y) Y              &as LS(J) J
 &as LS(N) N  &as LS(L) L  &as LS(S) S                    &as LS(T) T  &as LS(G) G          &as UNDER MINUS         &as LS(E) E     &as LS(A) A          &as LS(I) I              &as LS(H) H
 &as LS(Z) Z  &as LS(M) M  &as LS(C) C                    &as LS(D) D  &as LS(V) V          &as DOUBLE_QUOTES APOS  &as COLON SEMI  &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH
                           &left_taphold LS(ENTER) ENTER  &as LS(R) R  &lt 6 LC(BACKSPACE)  &lt 5 BACKSPACE         &kp SPACE       &to 1
