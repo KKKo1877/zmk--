@@ -159,6 +159,11 @@
             bindings = <&as EQUAL PLUS>;
             key-positions = <8 9>;
         };
+
+        combo-enter {
+            bindings = <&kp ENTER>;
+            key-positions = <28 29>;
+        };
     };
 
     // ============================================================
